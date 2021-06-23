@@ -3,28 +3,43 @@ body{
     margin: 0;
     
 }
-
+@font-face {
+    font-family: "shrinkhand-regular.otf";
+    src: url("/shrimkhand/shrinkhand-regular.otf") format("opentype"),
+           
+   }
+   @font-face {
+    font-family: "Roboto-Medium.ttf";
+    src: url("/roboto/Roboto-Medium.ttf") format("truetype"),
+           
+   }  
 .titre{
     
-    width: 70%;
+    width: 60%;
     background: #fff;
     
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.titre h1{
+    font-family: "shrikhand",cursive;
+    font-weight: 600;
+    
+}
+.titre a{
+    text-decoration: none;
 }
 .titre i{
-    position: absolute;
-    left: 2rem;
-    top: 1rem;
+    
+    
     border-radius: 50%;
     display: flex;
     width: 2rem;
     
     height: 2rem;
-    position: absolute;
-    left: 2rem;
+    margin-left: 2rem;
     justify-content: center;
     align-items: center;
 }
@@ -35,7 +50,9 @@ body{
 .titre a:visited{
     color: #000;
 }
-
+.image{
+    height: 370px;
+}
 
 .image img{
     
@@ -45,8 +62,8 @@ body{
 }
 .menu-francaise{
    position: relative;
-   margin-top: -3rem;
-    border-radius: 35px;
+   
+    border-radius: 35px 35px 0 0;
     height: 60%;
     width: 100%;
     background: #f6f6f6;
@@ -55,8 +72,13 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 95%;
     margin: auto;
+    padding-bottom: 1.5rem;
+}
+.menu-cd-1 h1{
+    font-family: "shrikhand",cursive;
+    font-weight: 200;
 }
 .heart span{
     cursor: pointer;
@@ -69,18 +91,21 @@ body{
 }
 .menu-cd-2{
     display: flex;
+    
    column-gap: 2rem;
    width: 95%;
    margin: auto;
+   justify-content: center;
    
    
 }
 .menu1,.menu2,.menu3{
-    width: 40%;
+    width: 31%;
     margin-bottom: 2rem;
 
 }
 h3{
+    
     line-height: 2rem;
     width: 40px;
     height: 3px;
@@ -100,81 +125,40 @@ h3{
     border-radius: 15px;
     background-color: #FFF;
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
-    width: 380px;
+    width: 100%;
     animation: child 1s  ease-in-out forwards;
     height: 0px;
 }
 @keyframes child {
     from{
+        opacity: 0.5;
         height: 0px;
     }
     to{
+        opacity: 1;
         height: 70px;
     }
     
 }
-.item1{
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 0px;
-    overflow: hidden;
-    margin-top: 1rem;
-    border-radius: 15px;
-    background-color: #FFF;
-    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
-    width: 380px;
-    animation: child-1 1.5s ease-in-out forwards;
-}
-@keyframes child-1 {
-    from{
-        height:0px;
-    }
-    to{
-        height: 70px;
-    }
-    
-}
-.item2{
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 0px;
-    overflow: hidden;
-    margin-top: 1rem;
-    border-radius: 15px;
-    background-color: #FFF;
-    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
-    width: 380px;
-    animation:child-2 2s ease-in-out forwards;
-}
-@keyframes child-2 {
-    from{
-        height: 0px;
-    }
-    to{
-        height: 70px;
-    }
-    
-}
+
 .prix{
-    
-    margin-left: 2rem;
-    margin-right: 2rem;
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     
 }
 .prix h4{
-    
+    font-family: "roboto",sans-serif;
+    font-weight: 600;
     padding-top: 2rem;
     line-height: 0;
 }    
 .prix p{
-    
+    font-family: "roboto",sans-serif;
+    font-weight: 200;
     overflow: hidden;
     padding-bottom: 2rem;
     text-overflow: ellipsis;
@@ -195,9 +179,10 @@ h3{
 
 }
 .price-menu{
+    margin-right: 1rem;
     cursor: pointer;
 }
-.price-menu:active +.valider{
+.item:hover .valider{
     opacity: 1;
     transform:scale(90px);
     width:90px;
@@ -214,6 +199,8 @@ h3{
     justify-content: center;
 }
 .button{
+    font-family: "roboto",sans-serif;
+    font-weight: 200;
     cursor: pointer;
     font-size: 20px;
     color: #fff;
@@ -243,27 +230,84 @@ h3{
     
     
     width: 100%;
-    margin-top: -3rem;
+    margin-top: -2rem;
     background: #353535;
     color: #fafafa;
 }
 .foot-myfood h1{
-    padding-top: 2.5rem;
-    margin-left: 2.5rem;
+    font-family: "shrikhand",cursive;
+    font-weight: 400;
+    padding-top: 2rem;
+    margin-left: 2rem;
     width: 150px;
 }
 .foot-list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width:90% ;
+    margin-left: 2rem;
 }
 .foot-list-child{
+    font-family: "roboto",sans-serif;
+    font-weight: 200;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
-
+    font-size: 1.10rem;
 }
 .foot-list-child i{
     margin-right: 1rem;
+}
+@media screen and (max-width:766px)
+{
+    .titre{
+        height: 50px;
+        padding-top: 1rem;
+        width: 70%;
+    }
+    .image{
+        height: 300px;
+    }
+    .menu-francaise{
+        
+        border-radius: 35px 35px 0 0;
+    }
+    .menu-cd-1{
+        padding-bottom: 1.5rem;
+    }
+    .menu-cd-2 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        width: 95%;
+        margin: auto;
+    }
+    .menu1, .menu2, .menu3 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .price-menu{
+        padding-top: 2rem;
+    }
+    .button-father{
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+    }
+    .foot{
+        margin-top: -1.4rem;
+    }
+    .foot-list {
+        padding-bottom: 2rem;
+        margin-left: 2rem;
+        line-height: 2px;
+        display: flex;
+        flex-direction: column;
+    }
+    .foot-list-child {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 0;}
+
 }
