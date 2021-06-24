@@ -178,7 +178,28 @@ margin: 0;
      transition-duration: 200ms;   
      transition-property: transform;
      transform: scale(1);
+     animation:button 0.5s ease-in-out infinite;
 
+}
+@keyframes button{
+    0%{
+        background: linear-gradient(
+            175deg
+            , #FF79DA 10%, #9356DC 90%);
+            box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);  
+    }
+    50%{
+        background:linear-gradient(
+        175deg
+        , #FF79DA 100%, #9356DC 0%);
+        box-shadow: 0.2rem 0.2rem 1px rgb(0 0 0 / 5%);
+    }
+    100%{
+        background:linear-gradient(
+        175deg
+        , #FF79DA 10%, #9356DC 90%);
+        box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+    }
 }
 .button1:hover{
     transform: scale(0.90);
@@ -305,6 +326,17 @@ margin: 0;
     height: 22px;
     background: #99E2D0;
     color: #278870;
+    animation: new 0.5s ease-in-out infinite;
+}
+@keyframes new{
+    from{
+    background: #99E2D0;
+    color: #278870;
+    }
+    to{
+    color: #99E2D0;
+    background: #278870;
+    }
 }
 .container-child a{
     text-decoration: none;
