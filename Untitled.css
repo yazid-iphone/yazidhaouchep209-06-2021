@@ -105,7 +105,8 @@ body{
 
 }
 h3{
-    
+    font-family: "roboto",sans-serif;
+    font-weight: 600;
     line-height: 2rem;
     width: 40px;
     height: 3px;
@@ -126,7 +127,7 @@ h3{
     background-color: #FFF;
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
     width: 100%;
-    animation: child 1s  ease-in-out forwards;
+    animation: child 2s  ease-in-out forwards;
     height: 0px;
 }
 @keyframes child {
@@ -179,6 +180,7 @@ h3{
 
 }
 .price-menu{
+    font-weight: bold;
     margin-right: 1rem;
     cursor: pointer;
 }
@@ -259,6 +261,45 @@ h3{
 .foot-list-child i{
     margin-right: 1rem;
 }
+.foot-list-child  a{
+    cursor: pointer;
+    text-decoration: none;
+    color:#fff;
+
+}
+@media screen and (max-width:1024px)
+{
+  .menu-cd-2{
+      display: flex;
+      flex-direction: column;
+  } 
+  .menu1, .menu2, .menu3{
+      width: 100%;
+    }
+  .menu-cd-2 h3{
+      width: 100%;
+      text-align: center;
+  }
+  .foot-myfood h1{
+      margin-left: 0;
+      text-align: center;
+      width: 100%;
+      line-height: 0.5rem;
+      padding-top: 2.5rem;
+  }
+  .foot-list{
+      padding-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+  }
+  .foot-list-child{
+      margin-bottom: 0;
+      line-height: 2px;
+  }
+  
+}
+    
+
 @media screen and (max-width:766px)
 {
     .titre{
@@ -287,6 +328,10 @@ h3{
         width: 100%;
         margin-bottom: 2rem;
     }
+    .menu-cd-2 h3{
+        width: 10%;
+        text-align: left;
+    }
     .price-menu{
         padding-top: 2rem;
     }
@@ -296,6 +341,11 @@ h3{
     }
     .foot{
         margin-top: -1.4rem;
+    }
+    .foot-myfood h1{
+        padding-left: 2rem;
+        text-align: left;
+        width: auto;
     }
     .foot-list {
         padding-bottom: 2rem;
