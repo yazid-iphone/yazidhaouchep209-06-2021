@@ -1,5 +1,6 @@
-Body{
-    
+
+
+Body{    
 padding: 0;
 margin: 0;
 }
@@ -13,6 +14,7 @@ margin: 0;
     src: url("/roboto/Roboto-Medium.ttf") format("truetype"),
            
    }  
+   
 .load-spinner{
     display: flex;
     justify-content: center;
@@ -20,7 +22,7 @@ margin: 0;
     position: fixed;
     height: 100%;
     width: 100%;
-    animation:load 4s ease-in-out normal forwards ;
+    animation:load 6s ease-in-out forwards;
     opacity: 1;
     background-color: hsla(0,0%, 90%, 0.9);
     z-index: 200;
@@ -63,13 +65,14 @@ margin: 0;
     height: 2rem;
     border-radius: 50%;
     background-color: #9356DC ;
-    animation: circle1  3s ease-in-out alternate-reverse infinite;
+    animation: circle1  1s ease-in-out alternate-reverse infinite;
     
-    animation-delay: 0.5s;
+    animation-delay: 0.2s;
     
 }
 @keyframes circle1{
-    0%{opacity: 0.3;
+    0%{
+        opacity: 0;
         transform: scale(0);
     }
     100%{opacity: 1;
@@ -83,12 +86,13 @@ margin: 0;
     height: 2rem;
     border-radius: 50%;
     background-color: #FF79DA ;
-    animation: circle2  3s ease-in-out alternate-reverse infinite;
-    animation-delay: 1s;
+    animation: circle2  1s ease-in-out alternate-reverse infinite;
+    animation-delay: 0.5s;
     
 }
 @keyframes circle2{
-    0%{opacity: 0.3;
+    0%{
+        opacity: 0;
         transform: scale(0);
     }
     100%{opacity: 1;
@@ -102,14 +106,16 @@ margin: 0;
     height: 2rem;
     border-radius: 50%;
     background-color: #99E2D0;
-    animation: circle3  3s ease-in-out alternate-reverse infinite;
-    animation-delay: 1.5s;
+    animation: circle3  1s ease-in-out alternate-reverse infinite;
+    animation-delay: 0.8s;
     
 }
 @keyframes circle3{
-    0%{opacity: 0.3;
+    0%{
+        opacity: 0;
         transform: scale(0);
     }
+    
     100%{opacity: 1;
         
         transform: scale(1.5);
@@ -278,6 +284,7 @@ margin: 0;
     font-weight: 600;
     font-family:"roboto",sans-serif;
 }
+
 .container{
     background:#f6f6f6;  
     
@@ -450,7 +457,7 @@ margin: 0;
     .wrapper h1 {
         margin: auto;
         text-align: center;
-        width: 90%;
+        width: 80%;
         padding-top: 2rem;
 
     }
@@ -469,6 +476,7 @@ margin: 0;
         align-items: center;
         /* margin: auto; */
         justify-content: center;}
+
     .choix-titre{
             width: 90%;
         }
@@ -478,6 +486,9 @@ margin: 0;
     .choix-1,.choix-2{
         width: 90%;
     }    
+    .number{
+        margin-left: -0.5rem;
+    }
     .container{
         margin-bottom: -1.5rem;
     }    
