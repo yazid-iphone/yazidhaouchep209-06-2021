@@ -1,0 +1,23 @@
+{
+  "name": "test-projet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path scss scss/main.scss public/css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yazid-iphone/yazidhaouchep209-06-2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yazid-iphone/yazidhaouchep209-06-2021/issues"
+  },
+  "homepage": "https://github.com/yazid-iphone/yazidhaouchep209-06-2021#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
