@@ -48,7 +48,7 @@ body{
   }
   .lds-spinner div {
      background: #99E2D0; 
-    transform-origin:0px 100px ;
+    transform-origin:0px 50px ;
     animation: lds-spinner 1.2s ease-in-out infinite;
     display: flex;
     position: absolute;

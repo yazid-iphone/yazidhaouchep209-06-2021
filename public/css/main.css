@@ -1,7 +1,317 @@
-body {
-  background: red; }
-  body div {
-    color: yellow;
-    border: 1px solid yellow; }
-  body .wrapper {
-    background: red; }
+@font-face {
+  font-family: "shrinkhand-regular.otf";
+  src: url("/shrimkhand/shrinkhand-regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: "Roboto-Medium.ttf";
+  src: url("/roboto/Roboto-Medium.ttf") format("truetype"); }
+
+body .load-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  animation: load 6s ease-in-out forwards;
+  opacity: 1;
+  background-color: rgba(230, 230, 230, 0.9);
+  z-index: 200; }
+
+@keyframes load {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.7; }
+  75% {
+    opacity: 0.3; }
+  100% {
+    visibility: hidden;
+    opacity: 0; } }
+
+body .ohmyfood {
+  display: block; }
+  body .ohmyfood .ohmyfood h1 {
+    font-size: 50px;
+    font-family: Shrikhand,"cursive"; }
+
+body .loading {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+body .circle1 {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  animation: circle1  1s ease-in-out alternate-reverse infinite;
+  animation-delay: 0.2s;
+  background-color: #9356DC;
+  animation: circle1  1s ease-in-out alternate-reverse infinite;
+  animation-delay: 0.2s; }
+
+@keyframes circle1 {
+  from {
+    opacity: 0;
+    transform: scale(0); }
+  to {
+    opacity: 1;
+    transform: scale(1.5); } }
+
+body .circle2 {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  animation: circle1  1s ease-in-out alternate-reverse infinite;
+  animation-delay: 0.2s;
+  background-color: #FF79DA;
+  animation: circle2  1s ease-in-out alternate-reverse infinite;
+  animation-delay: 0.5s; }
+
+@keyframes circle2 {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  100% {
+    opacity: 1;
+    transform: scale(1.5); } }
+
+body .circle3 {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  animation: circle1  1s ease-in-out alternate-reverse infinite;
+  animation-delay: 0.2s;
+  background-color: #99E2D0;
+  animation: circle3  1s ease-in-out alternate-reverse infinite;
+  animation-delay: 0.8s; }
+
+@keyframes circle3 {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  100% {
+    opacity: 1;
+    transform: scale(1.5); } }
+
+body .logo-myfood {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 15%; }
+  body .logo-myfood .logo-myfood img {
+    width: 150px;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+body .localitation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  background-color: #f3f3f3; }
+
+body .localitation i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem; }
+  body .localitation i p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: "roboto",sans-serif; }
+
+body .wrapper {
+  text-align: center;
+  background-color: #f6f6f6;
+  margin-top: -1.5rem; }
+  body .wrapper h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "roboto",sans-serif;
+    padding-top: 1rem; }
+  body .wrapper p {
+    font-size: 1.10rem;
+    font-weight: 300;
+    font-family: "roboto",sans-serif; }
+
+body .button1 {
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  width: 250px;
+  height: 60px;
+  border-radius: 100px;
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+  box-shadow: 0 0 0 25%;
+  margin-bottom: 2rem;
+  transition-duration: 200ms;
+  transition-property: transform;
+  transform: scale(1);
+  animation: button 0.5s ease-in-out infinite; }
+  body .button1:hover {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 35%; }
+
+body .choix-father {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  body .choix-father h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "roboto",sans-serif; }
+  body .choix-father .choix-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    width: 100%; }
+    body .choix-father .choix-child .choix-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      justify-content: flex-start;
+      width: 270px;
+      height: 70px;
+      border-radius: 25px;
+      background: #f6f6f6; }
+      body .choix-father .choix-child .choix-1:hover {
+        background: #f2eafb; }
+      body .choix-father .choix-child .choix-1 i {
+        padding-left: 1.25rem;
+        color: gray; }
+      body .choix-father .choix-child .choix-1 p {
+        padding-left: 0.5rem;
+        padding-right: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: "roboto",sans-serif; }
+    body .choix-father .choix-child .number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: #9356DC;
+      color: #fff;
+      margin-left: -0.5rem; }
+
+.container {
+  background: #f6f6f6; }
+  .container h2 {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "roboto",sans-serif; }
+  .container .container-child {
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 2rem; }
+    .container .container-child a {
+      text-decoration: none; }
+      .container .container-child a:visited {
+        color: #000; }
+    .container .container-child .container-cd-1 {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 90%;
+      cursor: pointer;
+      position: relative; }
+      .container .container-child .container-cd-1 img {
+        width: 100%;
+        height: 12rem;
+        object-fit: cover; }
+    .container .container-child .new {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 65px;
+      height: 22px;
+      background: #99E2D0;
+      color: #278870;
+      animation: new 0.5s ease-in-out infinite; }
+
+@keyframes new {
+  from {
+    background: #99E2D0;
+    color: #278870; }
+  to {
+    color: #99E2D0;
+    background: #278870; } }
+    .container .container-child .menu {
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between; }
+    .container .container-child .menu1 {
+      padding-bottom: 2rem;
+      padding-left: 1rem; }
+      .container .container-child .menu1 h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        font-family: "roboto",sans-serif; }
+      .container .container-child .menu1 p {
+        font-size: 1.25rem;
+        font-weight: 300;
+        font-family: "roboto",sans-serif; }
+    .container .container-child .menu2 {
+      width: 3rem; }
+    .container .container-child .pink-heart {
+      font-size: 30px;
+      cursor: pointer;
+      color: #FF79DA;
+      position: absolute;
+      opacity: 0; }
+      .container .container-child .pink-heart:hover {
+        opacity: 1;
+        transform: scale(1.3); }
+    .container .container-child .empty-heart {
+      font-size: 30px;
+      color: grey; }
+
+.foot {
+  margin-top: -2rem;
+  background: #353535;
+  color: #fafafa; }
+  .foot .foot-myfood h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: "shrikhand",cursive;
+    padding-top: 2rem;
+    margin-left: 2rem;
+    width: 150px; }
+  .foot .foot-list {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 2rem; }
+  .foot .foot-list-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; }
+    .foot .foot-list-child p {
+      font-size: 1rem;
+      font-weight: 300;
+      font-family: "roboto",sans-serif;
+      text-decoration: none; }
+    .foot .foot-list-child a {
+      cursor: pointer;
+      text-decoration: none;
+      color: #fff; }
