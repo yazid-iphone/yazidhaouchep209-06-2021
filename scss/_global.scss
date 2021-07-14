@@ -1,6 +1,12 @@
 $first-color:#9356DC;
 $second-color:#FF79DA;
 $third-color:#99E2D0;
+$box:0 5px 10px 0;
+$green:rgb(1,0,0);
+$alpha:.2;
+
+
+
 @font-face {
     font-family: "shrinkhand-regular.otf";
     src: url("/shrimkhand/shrinkhand-regular.otf") format("opentype"),
@@ -15,7 +21,8 @@ $third-color:#99E2D0;
     align-items: center;
 }
 @mixin circle{
-    margin-right: 1rem;
+        margin-left: 2rem;
+        margin-right: 1rem;
         width: 2rem;
         height: 2rem;
         border-radius: 50%;
@@ -25,6 +32,8 @@ $third-color:#99E2D0;
 
 
 body{
+    padding: 0;
+    margin: 0;
     .load-spinner{
         @include flex;
         position: fixed;
@@ -51,13 +60,14 @@ body{
         }}}
     .ohmyfood{
         display: block;
-    .ohmyfood h1{
+    h1{
         font-size: 50px;
         font-family:Shrikhand,"cursive";
     }
 }
     .loading{
         @include flex; 
+        
 }
     .circle1{
         @include circle;
@@ -103,11 +113,11 @@ body{
    }
    .logo-myfood{
     @include flex;
-    box-shadow:0 0 0 15%;
+    box-shadow:$box rgba($green,$alpha);
 
 
-.logo-myfood img{
-    width: 150px;
+ img{
+    width: 180px;
     margin-top: 1rem;
     margin-bottom: 1rem;}
 }
@@ -117,15 +127,15 @@ body{
     margin-top: 0.5rem;
     background-color: #f3f3f3;
 
-}
-.localitation i{
+
+ i{
     @include flex;
-    margin-right: 1rem;
+    margin-right: 1rem;}
     
 
  p{
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 300;
     font-family:"roboto",sans-serif;
 }
 }
@@ -133,17 +143,35 @@ body{
     text-align: center;
     background-color: #f6f6f6;
     margin-top: -1.5rem;
+    @media(max-width:766px)
+    {
+        margin-top: 0;
+    }
  h1{
     font-size: 1.5rem;
     font-weight: 600;
     font-family:"roboto",sans-serif;
     padding-top: 1rem;
+    @media(max-width:766px){
+        margin: auto;
+        text-align: center;
+        width: 80%;
+        padding-top: 2rem;
+    }
 }
 p{
    font-size: 1.10rem;
     font-weight: 300 ;
     font-family:"roboto",sans-serif;
+    @media (max-width:766px){
+        width: 90%;
+        margin: auto;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+    }
 }
+
+
 }
 .button1{
     cursor: pointer;
@@ -156,7 +184,7 @@ p{
     background: linear-gradient(
         175deg
         ,$second-color 10%, $first-color 95%);
-    box-shadow: 0 0 0 25%;
+    box-shadow:$box rgba($green,$alpha);
     margin-bottom: 2rem;
      transition-duration: 200ms;   
      transition-property: transform;
@@ -164,22 +192,51 @@ p{
      animation:button 0.5s ease-in-out infinite;
 &:hover{
     transform: scale(0.90);
-    box-shadow: 0 0 0 35%;
+    box-shadow:$box rgba($green,$alpha+5%);
 }
 }
 .choix-father{
     @include flex;
     flex-direction: column;
-h2{
+    @media(max-width:1024px){
+        display: flex;
+        flex-direction: column;
+    }
+.choix-titre{
+    text-align: center;
+    width: 100%;
+    h2{
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     font-family:"roboto",sans-serif;  
-}
+    @media (max-width:766px)
+    {
+     text-align:left;
+     margin-left: 1rem;
+    }
+}}
 .choix-child{
 @include flex;
     column-gap: 3rem;
-    width: 100%;
+    
+    @media(max-width:1024px){
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    @media (max-width:766px){
+        @include flex;
+        row-gap: 2rem;
+    
+        flex-direction: column;
+        
+        width: 95%;
+        
+    
+
+    }
 .choix-1{
+    
     @include flex;
     cursor: pointer;
     justify-content: flex-start;
@@ -187,20 +244,34 @@ h2{
     height: 70px;
     border-radius: 25px;
     background:#f6f6f6;
-    &:hover{
-        background:#f2eafb;
+    @media(max-width:10240px){
+        width: 70%;
+        margin: auto;
     }
- i{
+    @media (max-width:776px){
+        width: 90%;
+    }
+    &:hover {
+        background:#f2eafb;
+        i{
+            color: $first-color;
+        }
+    }
+        
+i{
     padding-left: 1.25rem;
     color:gray;
+    
 }
  p{
     padding-left: 0.5rem;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     font-family:"roboto",sans-serif;
-}}
+    white-space: nowrap;
+}
+}
 .number{
     @include flex;
     width: 1.5rem;
@@ -209,15 +280,24 @@ h2{
     background:$first-color;
     color: #fff;
     margin-left: -0.5rem;
-}}}}
+}}}
 .container{
     background:#f6f6f6;  
+    @media (max-width:776px)
+    {
+        margin-bottom: -1.5rem;
+    }
 h2{
     padding-top: 2rem;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
     font-family:"roboto",sans-serif;
+    @media(max-width: 776px){
+        padding-left: 1rem;
+        padding-top: 2rem;
+        text-align: left;
+    }
 }
 .container-child{
     display: grid;
@@ -225,6 +305,13 @@ h2{
     row-gap: 2rem;
     grid-template-columns: repeat(2,1fr);
     margin: 2rem 2rem;
+    @media(max-width:776px)
+    {
+        display:flex;
+            flex-direction: column;
+            margin: 0;
+            padding-bottom: 4rem; 
+    }
     a{
         text-decoration: none;
     &:visited{
@@ -232,12 +319,17 @@ h2{
         }
 }
 .container-cd-1{
-    background: white;
+    background: #fff;
     border-radius: 20px;
     overflow: hidden;
     height: 90%;
     cursor: pointer;
     position: relative;
+    @media(max-width:776px)
+    {
+        width: 90%;
+        margin: auto;
+    }
      img{
         width: 100%;
         height: 12rem;
@@ -269,19 +361,29 @@ h2{
     height: 120px;
     @include flex;
     justify-content: space-between;
+    @media(max-width:776px)
+    {
+        height: 70px;
+        line-height: 2px;
+    }
 }
 .menu1{
     padding-bottom: 2rem;
     padding-left: 1rem;
+    @media(max-width:776px)
+    {
+        padding-top: 1.5rem;
+    }
      h3{
     font-size: 1.25rem;
     font-weight: 600;
     font-family:"roboto",sans-serif;
+    
 }
- p{
-    font-size: 1.25rem;
+ p
+ {
+     @extend h3;
     font-weight:300;
-    font-family:"roboto",sans-serif;
 }
 }
 .menu2{
@@ -316,24 +418,62 @@ h2{
     padding-top: 2rem;
     margin-left: 2rem;
     width: 150px;
-}
+    @media(max-width: 1024px){
+    text-align:center;
+    width: 100%;
+    margin-left: 0;}
+    @media(max-width: 776px)
+    {
+        text-align: left;
+        width: 50%;
+        padding-left: 2rem;
+        line-height: 2px;
+    
+}}
 .foot-list{
     display: flex;
     justify-content: space-between;
-    width:90% ;
+    width:70% ;
     margin-left: 2rem;
+    @media(max-width: 1024px)
+    {
+        @include flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-left: 0;
+    }
+    @media(max-width: 776px)
+    {
+                 margin-left:2rem ;
+                display: block !important;
+                height: 170px;
+                width: 90%;
+                line-height: 2px;
+    }
 }
 .foot-list-child{
     @include flex;
     margin-bottom: 2rem;
+    @media(max-width:776px)
+    {
+        @include flex;
+        margin-bottom: 0;
+        justify-content: flex-start;
+    }
 p{
     font-size: 1rem;
     font-weight: 300;
     font-family:"roboto",sans-serif;
     text-decoration: none;
+
 }
   a{
     cursor: pointer;
     text-decoration: none;
     color:#fff;
-       }}}
+       }
+        i{
+        margin-right:1rem; 
+    }}}
+      
+}

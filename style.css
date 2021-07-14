@@ -125,7 +125,7 @@ margin: 0;
 .logo-myfood{
     display: flex;
     justify-content: center;
-    box-shadow:0 5px 10px 0 rgb(0 0 0 / 15%);
+    box-shadow:0 0 0 5px rgb( 1 0 0 / 15%);
 
 }
 .logo-myfood img{
@@ -432,10 +432,7 @@ margin: 0;
         width: 70%;
         margin: auto;
     }
-    .choix-2{
-        width: 70%;
-        margin: auto;
-    }
+   
 }
 @media screen and (max-width:766px)
 {
@@ -471,7 +468,7 @@ margin: 0;
     .choix-titre h2{
         text-align: left;
     }    
-    .choix-1,.choix-2{
+    .choix-1{
         width: 90%;
     }    
     .number{
