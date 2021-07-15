@@ -40,7 +40,7 @@ $alpha:.2;
     background: linear-gradient(
         175deg
         , #FF79DA 10%, #9356DC 90%);
-        background-clip: text;
+        
 -webkit-background-clip: text;
 color: transparent;
 }
@@ -57,6 +57,10 @@ color: transparent;
        opacity: 1;
     }
 }}
+@mixin roboto{
+    font-family: "roboto",sans-serif;
+    font-weight: 200;
+}
 @font-face {
     font-family: "shrinkhand-regular.otf";
     src: url("/shrimkhand/shrinkhand-regular.otf") format("opentype"),
@@ -229,9 +233,9 @@ img{
     }
 
 .menu-cd-1{
-    display: flex;
+    @include flex;
     justify-content: space-between;
-    align-items: center;
+    
     width: 95%;
     margin: auto;
     padding-bottom: 1.5rem;
@@ -379,8 +383,7 @@ h4{
     
 }    
  p{ @include prix;
-    font-family: "roboto",sans-serif;
-    font-weight: 200;
+   @include roboto;
     padding-bottom: 2rem;
     
 }}
@@ -423,8 +426,7 @@ h4{
     background: linear-gradient(
         175deg
         , #FF79DA 10%, #9356DC 90%);
-    font-family: "roboto",sans-serif;
-    font-weight: 200;
+    @include roboto;
     cursor: pointer;
     font-size: 17px;
     color: #fff;
@@ -498,8 +500,7 @@ h4{
 }
 .foot-list-child{
     @include flex;
-    font-family: "roboto",sans-serif;
-    font-weight: 200;
+    @include roboto;
     margin-bottom: 2rem;
     font-size: 1.10rem;
     @media(max-width:1024px){

@@ -561,8 +561,9 @@ body {
         border-radius: 35px 35px 0 0; } }
     body .menu-francaise .menu-cd-1 {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+      justify-content: space-between;
       width: 95%;
       margin: auto;
       padding-bottom: 1.5rem; }
@@ -583,7 +584,6 @@ body {
         margin-top: 1rem; } }
     body .menu-francaise .heart .pink-heart {
       background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
-      background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
       font-size: 30px;
