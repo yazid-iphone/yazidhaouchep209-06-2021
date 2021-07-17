@@ -101,7 +101,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 8px 12px 15px rgba(1, 0, 0, 0.2); }
+    box-shadow: 0 3px 15px 0 rgba(1, 0, 0, 0.2); }
     body .logo-myfood img {
       width: 180px;
       margin-top: 1rem;
@@ -158,7 +158,7 @@ body {
     width: 250px;
     height: 60px;
     border-radius: 100px;
-    box-shadow: 8px 12px 15px rgba(1, 0, 0, 0.2);
+    box-shadow: 0 3px 15px 0 rgba(1, 0, 0, 0.2);
     margin-bottom: 2rem;
     transition-duration: 200ms;
     transition-property: transform;
@@ -166,7 +166,7 @@ body {
     animation: button 0.5s ease-in-out infinite; }
     body .button1:hover {
       transform: scale(0.9);
-      box-shadow: 8px 12px 15px #010000; }
+      box-shadow: 0 3px 15px 0 #010000; }
   body .choix-father {
     display: flex;
     justify-content: center;
@@ -656,7 +656,7 @@ body {
           margin-top: 1rem;
           border-radius: 15px;
           background-color: #FFF;
-          box-shadow: 8px 12px 15px rgba(1, 0, 0, 0.2);
+          box-shadow: 0 3px 15px 0 rgba(1, 0, 0, 0.2);
           width: 100%;
           animation: child 1s  ease-in-out forwards;
           height: 70px;
@@ -779,7 +779,7 @@ body {
       transform: scale(1); }
       body .button-father .button:hover {
         transform: scale(0.9);
-        box-shadow: 8px 12px 15px #010000; }
+        box-shadow: 0 3px 15px 0 #010000; }
   body .foot {
     width: 100%;
     margin-top: -2rem;
