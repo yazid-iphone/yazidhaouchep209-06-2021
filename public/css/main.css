@@ -663,6 +663,7 @@ body {
 
 @keyframes child {
   from {
+    transform: translateY(0rem);
     opacity: 0; }
   to {
     transform: translateY(1rem);
@@ -676,6 +677,7 @@ body {
 
 @keyframes child {
   from {
+    transform: translateY(0rem);
     opacity: 0; }
   to {
     transform: translateY(1rem);
@@ -689,6 +691,7 @@ body {
 
 @keyframes child {
   from {
+    transform: translateY(0rem);
     opacity: 0; }
   to {
     transform: translateY(1rem);
@@ -702,6 +705,7 @@ body {
 
 @keyframes child {
   from {
+    transform: translateY(0rem);
     opacity: 0; }
   to {
     transform: translateY(1rem);
