@@ -46,7 +46,7 @@ body{
         position: fixed;
         height: 100%;
         width: 100%;
-        animation:load 6s ease-in-out forwards;
+        animation:load 3s ease-in-out forwards;
         opacity: 1;
         background-color: hsla(0,0%, 90%, 0.9);
         z-index: 200;
@@ -132,7 +132,7 @@ body{
 .localitation{
     @include flex;
     margin-top: 0.5rem;
-    background-color: #f3f3f3;
+    background-color: #f3f3f1;
 
 
  i{
@@ -253,7 +253,7 @@ p{
     border-radius: 25px;
     background:#f6f6f6;
     @media(max-width:10240px){
-        width: 70%;
+        
         margin: auto;
     }
     @media (max-width:766px){
@@ -349,22 +349,14 @@ h2{
     position: absolute;
     top: 1rem;
     right: 1rem;
-    width: 65px;
-    height: 22px;
+    width: 85px;
+    height: 27px;
     background: #99E2D0;
     color: #278870;
     animation: new 0.5s ease-in-out infinite;
+    font-family:sans-serif;
 }
-@keyframes new{
-    from{
-    background: #99E2D0;
-    color: #278870;
-    }
-    to{
-    color: #99E2D0;
-    background: #278870;
-    }
-}
+
 .menu{
     height: 120px;
     @include flex;

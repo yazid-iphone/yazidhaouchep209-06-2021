@@ -83,7 +83,7 @@ color: transparent;
     height: 100%;
     z-index: 200;
     opacity: 1;
-    animation: fixed 2.5s ease-in-out forwards;
+    animation: fixed 1s ease-in-out forwards;
   
   @keyframes fixed {
     0% {
@@ -274,7 +274,7 @@ h1{
 }
 .menu-cd-2{
    display: flex;
-    height: 300px;
+    height: 100%;
    column-gap: 2rem;
    width: 95%;
    margin: auto;
@@ -294,9 +294,11 @@ h1{
 
 .men{
     width: 31%;
+    height: 100%;
     margin-bottom: 2rem;
   @media(max-width: 1024px)  {
     width: 100%;  
+    margin-top: 1.5rem;
     
   }
 @media(max-width:766px){
@@ -416,6 +418,7 @@ h4{
 
 }}}
 .button-father{
+    padding-top: 1rem;
     @include flex;
     @media(max-width:766px){
         padding-top: 1.5rem;

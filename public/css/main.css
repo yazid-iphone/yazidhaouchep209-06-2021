@@ -16,7 +16,7 @@ body {
     position: fixed;
     height: 100%;
     width: 100%;
-    animation: load 6s ease-in-out forwards;
+    animation: load 3s ease-in-out forwards;
     opacity: 1;
     background-color: rgba(230, 230, 230, 0.9);
     z-index: 200; }
@@ -111,7 +111,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 0.5rem;
-    background-color: #f3f3f3; }
+    background-color: #f3f3f1; }
     body .localitation i {
       display: flex;
       justify-content: center;
@@ -217,7 +217,6 @@ body {
         background: #f6f6f6; }
         @media (max-width: 10240px) {
           body .choix-father .choix-child .choix-1 {
-            width: 70%;
             margin: auto; } }
         @media (max-width: 766px) {
           body .choix-father .choix-child .choix-1 {
@@ -300,19 +299,12 @@ body {
         position: absolute;
         top: 1rem;
         right: 1rem;
-        width: 65px;
-        height: 22px;
+        width: 85px;
+        height: 27px;
         background: #99E2D0;
         color: #278870;
-        animation: new 0.5s ease-in-out infinite; }
-
-@keyframes new {
-  from {
-    background: #99E2D0;
-    color: #278870; }
-  to {
-    color: #99E2D0;
-    background: #278870; } }
+        animation: new 0.5s ease-in-out infinite;
+        font-family: sans-serif; }
       body .container .container-child .menu {
         height: 120px;
         display: flex;
@@ -440,7 +432,7 @@ body {
     height: 100%;
     z-index: 200;
     opacity: 1;
-    animation: fixed 2.5s ease-in-out forwards; }
+    animation: fixed 1s ease-in-out forwards; }
 
 @keyframes fixed {
   0% {
@@ -599,7 +591,7 @@ body {
       font-size: 30px; }
     body .menu-francaise .menu-cd-2 {
       display: flex;
-      height: 300px;
+      height: 100%;
       column-gap: 2rem;
       width: 95%;
       margin: auto;
@@ -619,10 +611,12 @@ body {
           height: 100%; } }
       body .menu-francaise .menu-cd-2 .men {
         width: 31%;
+        height: 100%;
         margin-bottom: 2rem; }
         @media (max-width: 1024px) {
           body .menu-francaise .menu-cd-2 .men {
-            width: 100%; } }
+            width: 100%;
+            margin-top: 1.5rem; } }
         @media (max-width: 766px) {
           body .menu-francaise .menu-cd-2 .men {
             width: 100%;
@@ -754,6 +748,7 @@ body {
             body .menu-francaise .menu-cd-2 .men .price-menu {
               padding-top: 2rem; } }
   body .button-father {
+    padding-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center; }
