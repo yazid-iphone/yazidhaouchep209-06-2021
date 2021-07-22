@@ -166,7 +166,8 @@ body {
     animation: button 0.5s ease-in-out infinite; }
     body .button1:hover {
       transform: scale(0.9);
-      box-shadow: 0 3px 15px 0 #010000; }
+      box-shadow: 0 3px 15px 0 #010000;
+      opacity: 0.8; }
   body .choix-father {
     display: flex;
     justify-content: center;
@@ -663,10 +664,10 @@ body {
 
 @keyframes child {
   from {
-    transform: translateY(0rem);
+    transform: translateY(1rem);
     opacity: 0; }
   to {
-    transform: translateY(1rem);
+    transform: translateY(0rem);
     opacity: 1; } }
         body .menu-francaise .menu-cd-2 .men .item1 {
           animation-delay: 0.8s; }
@@ -677,10 +678,10 @@ body {
 
 @keyframes child {
   from {
-    transform: translateY(0rem);
+    transform: translateY(1rem);
     opacity: 0; }
   to {
-    transform: translateY(1rem);
+    transform: translateY(0rem);
     opacity: 1; } }
         body .menu-francaise .menu-cd-2 .men .item2 {
           animation-delay: 1.2s; }
@@ -691,10 +692,10 @@ body {
 
 @keyframes child {
   from {
-    transform: translateY(0rem);
+    transform: translateY(1rem);
     opacity: 0; }
   to {
-    transform: translateY(1rem);
+    transform: translateY(0rem);
     opacity: 1; } }
         body .menu-francaise .menu-cd-2 .men .item3 {
           animation-delay: 1.6s; }
@@ -705,10 +706,10 @@ body {
 
 @keyframes child {
   from {
-    transform: translateY(0rem);
+    transform: translateY(1rem);
     opacity: 0; }
   to {
-    transform: translateY(1rem);
+    transform: translateY(0rem);
     opacity: 1; } }
         body .menu-francaise .menu-cd-2 .men .prix {
           width: 100%;
@@ -778,7 +779,8 @@ body {
       transform: scale(1); }
       body .button-father .button:hover {
         transform: scale(0.9);
-        box-shadow: 0 3px 15px 0 #010000; }
+        box-shadow: 0 3px 15px 0 #010000;
+        opacity: 0.7; }
   body .foot {
     width: 100%;
     margin-top: -2rem;
