@@ -119,7 +119,7 @@ body {
       margin-right: 1rem; }
     body .localitation p {
       font-size: 1.25rem;
-      font-weight: 300;
+      font-weight: 400;
       font-family: "roboto",sans-serif; }
   body .wrapper {
     text-align: center;
@@ -128,13 +128,13 @@ body {
     @media (max-width: 766px) {
       body .wrapper {
         margin-top: 0; } }
-    body .wrapper h1 {
-      font-size: 1.5rem;
+    body .wrapper h2 {
+      font-size: 1.7rem;
       font-weight: 600;
       font-family: "roboto",sans-serif;
       padding-top: 1rem; }
       @media (max-width: 766px) {
-        body .wrapper h1 {
+        body .wrapper h2 {
           margin: auto;
           text-align: center;
           width: 80%;
@@ -561,12 +561,12 @@ body {
       padding-bottom: 1.5rem; }
       @media (max-width: 766px) {
         body .menu-francaise .menu-cd-1 {
-          padding-bottom: 1.5rem; } }
-      body .menu-francaise .menu-cd-1 h1 {
+          padding-bottom: 0; } }
+      body .menu-francaise .menu-cd-1 h2 {
         font-family: "shrikhand",cursive;
         font-weight: 200; }
         @media (max-width: 766px) {
-          body .menu-francaise .menu-cd-1 h1 {
+          body .menu-francaise .menu-cd-1 h2 {
             font-size: 27px;
             margin-top: 2rem;
             margin-left: 10px; } }

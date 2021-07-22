@@ -1,3 +1,5 @@
+
+  
 $first-color:#9356DC;
 $second-color:#FF79DA;
 $third-color:#99E2D0;
@@ -240,9 +242,9 @@ img{
     margin: auto;
     padding-bottom: 1.5rem;
 @media(max-width:766px){
-    padding-bottom: 1.5rem;
+    padding-bottom: 0;
 }
-h1{
+h2{
     font-family: "shrikhand",cursive;
     font-weight: 200;
     @media(max-width: 766px){
@@ -527,5 +529,4 @@ h4{
     color:#fff;
   }
 }
-}
-   }
+}}
