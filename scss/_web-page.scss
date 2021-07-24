@@ -65,12 +65,12 @@ color: transparent;
 }
 @font-face {
     font-family: "shrikhand-regular.otf";
-    src: url("assets/fonts/shrikhand/shrikhand-regular.otf") format("opentype"),
+    src: url("/assets/fonts/shrikhand/shrikhand-regular.otf") format("opentype"),
            
    }
    @font-face {
     font-family: "Roboto-Medium.ttf";
-    src: url("assets/fonts/roboto/Roboto-Medium.ttf") format("truetype"),
+    src: url("/assets/fonts/roboto/Roboto-Medium.ttf") format("truetype"),
            
    }  
    body{
@@ -336,6 +336,10 @@ h3{
     animation-delay: 0.4s;
     &:hover .valider{
     @include valid;
+    i{
+        transform: rotate(350deg)
+
+    }
     
     
 
@@ -399,10 +403,11 @@ h4{
     width: 0px;
     height: 100%;
     background:#99E2D0;
-    transition-duration: 400ms ;
+    transition-duration: 2s ;
     transform-origin: right;
     opacity: 0;
      i{
+         transform:rotate(0) ;
         color:#fff ;
 }}
 .price-menu{
