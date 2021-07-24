@@ -65,12 +65,12 @@ color: transparent;
 }
 @font-face {
     font-family: "shrinkhand-regular.otf";
-    src: url("/shrimkhand/shrinkhand-regular.otf") format("opentype"),
+    src: url("assets/fonts/shrikhand/shrinkhand-regular.otf") format("opentype"),
            
    }
    @font-face {
     font-family: "Roboto-Medium.ttf";
-    src: url("/roboto/Roboto-Medium.ttf") format("truetype"),
+    src: url("assets/fonts/roboto/Roboto-Medium.ttf") format("truetype"),
            
    }  
    body{
