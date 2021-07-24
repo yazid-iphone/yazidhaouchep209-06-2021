@@ -9,7 +9,7 @@ $alpha:.2;
 
 @font-face {
     font-family: "shrikhand-regular.otf";
-    src: url("assets/fonts/shrimkhand/shrikhand-regular.otf") format("opentype"),
+    src: url("yazidprojet3/assets/fonts/shrimkhand/shrikhand-regular.otf") format("opentype"),
 }
    @font-face {
     font-family: "Roboto-Medium.ttf";
@@ -70,7 +70,7 @@ body{
         display: block;
     h1{
         font-size: 50px;
-        font-family:Shrikhand,"cursive";
+        font-family: "Shrikhand",cursive;
     }
 }
     .loading{
