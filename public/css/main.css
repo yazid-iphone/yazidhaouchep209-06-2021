@@ -772,7 +772,7 @@ body {
       width: 200px;
       height: 50px;
       border-radius: 100px;
-      box-shadow: 0.25rem 0.25rem 10px 25%;
+      box-shadow: 0.25rem 0.25rem 10px ,0.2;
       margin-bottom: 2rem;
       transition-duration: 200ms;
       transition-property: transform;
@@ -780,7 +780,7 @@ body {
       body .button-father .button:hover {
         transform: scale(0.9);
         box-shadow: 0 3px 15px 0 #010000;
-        opacity: 0.7; }
+        opacity: 0.8; }
   body .foot {
     width: 100%;
     margin-top: -2rem;
