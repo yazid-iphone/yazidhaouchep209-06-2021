@@ -788,6 +788,7 @@ body {
       body .foot {
         height: 300px; } }
     body .foot h1 {
+      font-family: shrikhand;
       text-align: left;
       padding-left: 2rem;
       padding-top: 2rem; }
