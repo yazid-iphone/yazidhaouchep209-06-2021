@@ -35,6 +35,7 @@ $alpha:.2;
 
   }  
 @mixin column{
+    
     display: flex;
     flex-direction: column;
 }
@@ -64,13 +65,13 @@ color: transparent;
     font-weight: 200;
 }
 @font-face {
-    font-family: "shrikhand-regular.otf";
-    src: url("/assets/fonts/shrikhand/shrikhand-regular.otf") format("opentype"),
+    font-family: 'shrikhand-regular.otf';
+    src: url('/assets/fonts/shrikhand/shrikhand-regular.otf') format("opentype"),
            
    }
    @font-face {
-    font-family: "Roboto-Medium.ttf";
-    src: url("/assets/fonts/roboto/Roboto-Medium.ttf") format("truetype"),
+    font-family: 'Roboto-Medium.ttf';
+    src: url('/assets/fonts/roboto/Roboto-Medium.ttf') format("truetype"),
            
    }  
    body{
@@ -108,7 +109,7 @@ color: transparent;
       
   }
 }
-  .lds-spinner div {
+  .lds-spinner span {
      background: #99E2D0; 
     transform-origin:0px 50px ;
     animation: lds-spinner 1.2s ease-in-out infinite;
@@ -258,7 +259,7 @@ h2{
     @media(max-width:766px)
    { margin-right:1rem;
     margin-top: 1rem;}
-.pink-heart{
+.fas{
     @include linear;
     font-size: 30px;
     cursor: pointer;
@@ -270,7 +271,7 @@ h2{
     transform: scale(1.1);
     
 }}
-.empty-heart{
+.far{
     color: grey;
     font-size: 30px;
 }
@@ -337,9 +338,10 @@ h3{
     &:hover .valider{
     @include valid;
     i{
-        transform: rotate(350deg)
-
+    
+        transform: rotate(360deg);
     }
+   
     
     
 
@@ -354,7 +356,11 @@ h3{
     animation-delay: 0.8s;
   &:hover .valider{
     @include valid;
-
+    i{
+    
+        transform: rotate(-360deg);
+    }
+   
 
 @include child;
 }}
@@ -364,7 +370,10 @@ animation-delay: 1.2s;
    
     &:hover .valider{
     @include valid;
+    i{
     
+        transform: rotate(-360deg);
+    }
 
 @include child ;
     }}
@@ -373,6 +382,10 @@ animation-delay: 1.2s;
     @extend .item;
     &:hover .valider{
         @include valid;
+        i{
+    
+            transform: rotate(-360deg);
+        }
     @include child;
 
 
@@ -403,12 +416,15 @@ h4{
     width: 0px;
     height: 100%;
     background:#99E2D0;
-    transition-duration: 2s ;
+    transition-duration:400ms;
     transform-origin: right;
     opacity: 0;
      i{
-         transform:rotate(0) ;
+         transition-duration: 1s;
+          transform: rotate(0);
         color:#fff ;
+        
+        
 }}
 .price-menu{
     font-family: "roboto",sans-serif;
@@ -425,15 +441,14 @@ h4{
 
 
 }}}
-.button-father{
+.button{
+    width: 100%;
     padding-top: 1rem;
     @include flex;
     @media(max-width:766px){
         padding-top: 1.5rem;
-        padding-bottom: 3rem;
-    }
-
-.button{
+        padding-bottom: 3rem;}
+  .btn{  
     background: linear-gradient(
         175deg
         , #FF79DA 10%, #9356DC 90%);
@@ -461,79 +476,65 @@ h4{
 }
 
 
-
 .foot{
-    width: 100%;
+    height: 200px;
     margin-top: -2rem;
     background: #353535;
     color: #fafafa;
-    @media(max-width:766px)
-    {
-        margin-top: -1.4rem;
-    }
-    h1{
-    font-family: "shrikhand",cursive;
-    font-weight: 400;
-    padding-top: 2rem;
-    margin-left: 2rem;
-    width: 150px;
-    @media(max-width:1024px)
-    {
-      margin-left: 0;
-      text-align: center;
-      width: 100% ;
-      line-height: 0.5rem;
-      padding-top: 2.5rem;
-      padding-left: 0;
-    }
-    @media(max-width:766px){
-        padding-left: 2rem;
-        text-align: left;
-        width: auto;
-        font-size: 25px;
-    }
-}
-.foot-list{
-    display: flex;
-    justify-content: space-between;
-    width:90% ;
-    margin-left: 2rem;
-    @media(max-width:1024px)
-    {    @include column;
-         padding-bottom: 1rem;
-    }
-    @media(max-width: 766px)
-    {
-        padding-bottom: 2rem;
-        margin-left: 2rem;
-        line-height: 2px;
-        @include column;
-    }
-}
-.foot-list-child{
-    @include flex;
-    @include roboto;
-    margin-bottom: 2rem;
-    font-size: 1.10rem;
     @media(max-width:1024px){
-        margin-bottom: 0;
-      line-height: 2px;
+        height: 300px;
     }
-    @media(max-width:766px)
+   
+    h1{ 
+        font-family: shrikhand,"cursive"; 
+        text-align: left;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        @media(max-width: 1024px){
+            text-align: center !important;
+            padding-left: 0 !important;
+        }
+        @media(max-width: 666px)
+        { 
+            text-align: left !important;
+            margin-left: 1rem;
+        }
+        }
+    ul{
+        @include flex;
+    justify-content: space-between;
+list-style: none;
+width: 80%;
+padding-bottom: 2rem;
 
-{
-    @include flex;
-    justify-content: flex-start;
+@media(max-width :1024px){
+    display: block !important;
+    line-height: 2px;
+    margin-left: 2rem;
+}
+@media(max-width:666px){
+    display: block !important;
+    line-height:3px;
+    margin-left: -1rem;
     
-    margin-bottom: 0;
 }
- i{
-    margin-right: 1rem;
+
+
+li{
+    font-family:"roboto",sans-serif;
+    @include flex;
+     @media(max-width:666px){
+     @include flex;
+     justify-content: flex-start;
+ }
+    
+    i{padding-right: 0.5rem;}
+    a{
+        text-decoration: none;
+        color:#fff;
+    }
 }
-  a{
-    cursor: pointer;
-    text-decoration: none;
-    color:#fff;
-  }
 }
-}}
+}
+
+}

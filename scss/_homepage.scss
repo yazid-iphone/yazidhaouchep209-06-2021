@@ -16,7 +16,7 @@ $alpha:.2;
     src: url("assets/fonts/roboto/Roboto-Medium.ttf") format("truetype"),
 }    
 @mixin flex{
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
 }
@@ -66,17 +66,17 @@ body{
             visibility: hidden;
             opacity: 0;
         }}}
-    .ohmyfood{
-        display: block;
-    h1{
-        font-size: 50px;
-        font-family:Shrikhand,"cursive";
-    }
-}
-    .loading{
+        .ohmyfood {
+            display: block; 
+        h1 {
+            font-size :50px;
+            font-family :Shrikhand, " cursive " ;
+        }
+ul{
         @include flex; 
-        
-}
+        list-style: none;
+        padding: 0;
+
     .circle1{
         @include circle;
         background-color: $first-color ;
@@ -118,7 +118,8 @@ body{
     transform: scale(1.5);
           }
       }
-   }
+    }
+}}
    .logo-myfood{
     @include flex;
     box-shadow:$box rgba($green,$alpha);
@@ -210,18 +211,16 @@ p{
     @media(max-width:1024px){
         display: flex;
         flex-direction: column;
-    }
-.choix-titre{
+    h2{
     text-align: center;
     width: 100%;
-    h2{
     font-size: 1.5rem;
     font-weight: 500;
     font-family:"roboto",sans-serif;  
     @media (max-width:766px)
     {
      text-align:left;
-     margin-left: 1rem;
+     width: 90%;
     }
 }}
 .choix-child{
@@ -267,14 +266,13 @@ p{
         }
     }
         
-i{
+i{  padding-right: 1rem;
     padding-left: 1.25rem;
     color:gray;
     
 }
  p{
-    padding-left: 0.5rem;
-    padding-right: 1.5rem;
+    
     font-size: 1rem;
     font-weight: 400;
     font-family:"roboto",sans-serif;
@@ -310,16 +308,18 @@ h2{
 }
 .container-child{
     display: grid;
-    column-gap: 2rem;
-    row-gap: 2rem;
+    
     grid-template-columns: repeat(2,1fr);
-    margin: 2rem 2rem;
+   
+    padding-bottom: 2rem;
     @media(max-width:766px)
     {
         display:flex;
             flex-direction: column;
             margin: 0;
             padding-bottom: 4rem; 
+            row-gap: 2rem;
+            
     }
     a{
         text-decoration: none;
@@ -359,7 +359,7 @@ h2{
 }
 
 .menu{
-    height: 120px;
+    height: 90px;
     @include flex;
     justify-content: space-between;
     @media(max-width:766px)
@@ -369,16 +369,17 @@ h2{
     }
 }
 .menu1{
-    padding-bottom: 2rem;
+    
     padding-left: 1rem;
     @media(max-width:766px)
     {
-        padding-top: 1.5rem;
+        padding-top: 0;
     }
      h3{
     font-size: 1.25rem;
     font-weight: 600;
     font-family:"roboto",sans-serif;
+    line-height: 0.5rem;
     
 }
  p
@@ -390,7 +391,7 @@ h2{
 .menu2{
     width: 3rem;
 }
-.pink-heart{
+.fas{
     @include linear;
     font-size: 30px;
     cursor: pointer;
@@ -402,7 +403,7 @@ h2{
     transform: scale(1.1);
   }  
 }
-.empty-heart{
+.far{
     font-size: 30px;
     color: grey;
 }
@@ -410,73 +411,60 @@ h2{
 }
 
 .foot{
+    height: 200px;
     margin-top: -2rem;
     background: #353535;
     color: #fafafa;
-
-.foot-myfood h1{
-    font-size: 1.5rem;
-    font-weight: 300;
-    font-family:"shrikhand",cursive;
-    padding-top: 2rem;
-    margin-left: 2rem;
-    width: 150px;
-    @media(max-width: 1024px){
-    text-align:center;
-    width: 100%;
-    margin-left: 0;}
-    @media(max-width: 766px)
-    {
+    @media(max-width:1024px){
+        height: 300px;
+    }
+   
+    h1{  
         text-align: left;
-        width: 50%;
         padding-left: 2rem;
-        line-height: 2px;
-    
-}}
-.foot-list{
-    display: flex;
+        padding-top: 2rem;
+        @media(max-width: 1024px){
+            text-align: center !important;
+            padding-left: 0 !important;
+        }
+        @media(max-width: 666px)
+        { 
+            text-align: left !important;
+            margin-left: 1rem;
+        }
+        }
+    ul{
+        @include flex;
     justify-content: space-between;
-    width:70% ;
+list-style: none;
+width: 80%;
+padding-bottom: 2rem;
+@media(max-width :1024px){
+    display: block !important;
+    line-height: 2px;
     margin-left: 2rem;
-    @media(max-width: 1024px)
-    {
-        @include flex;
-        justify-content: space-around;
-        width: 100%;
-        margin-left: 0;
-    }
-    @media(max-width: 766px)
-    {
-                 margin-left:2rem ;
-                display: block !important;
-                height: 170px;
-                width: 90%;
-                line-height: 2px;
-    }
 }
-.foot-list-child{
-    @include flex;
-    margin-bottom: 2rem;
-    @media(max-width:766px)
-    {
-        @include flex;
-        margin-bottom: 0;
-        justify-content: flex-start;
-    }
-p{
-    font-size: 1rem;
-    font-weight: 300;
-    font-family:"roboto",sans-serif;
-    text-decoration: none;
+@media(max-width:666px){
+    display: block !important;
+    line-height:3px;
+    margin-left: -1rem;
+    
+}
 
+
+li{
+    @include flex;
+     @media(max-width:666px){
+     @include flex;
+     justify-content: flex-start;
+ }
+    
+    i{padding-right: 0.5rem;}
+    a{
+        text-decoration: none;
+        color:#fff;
+    }
 }
-  a{
-    cursor: pointer;
-    text-decoration: none;
-    color:#fff;
-       }
-        i{
-        margin-right:1rem; 
-    }}}
-      
+}
+}
 }
