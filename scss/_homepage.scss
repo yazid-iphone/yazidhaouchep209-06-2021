@@ -70,7 +70,7 @@ body{
             display: block; 
         h1 {
             font-size :50px;
-            font-family :'Shrikhand', cursive ;
+            font-family :'Shrikhand';
         }
 ul{
         @include flex; 
@@ -423,7 +423,7 @@ h2{
         text-align: left;
         padding-left: 2rem;
         padding-top: 2rem;
-        font-family: 'shrikhand',cursive;
+        font-family: shrikhand,"cursive";
         @media(max-width: 1024px){
             text-align: center !important;
             padding-left: 0 !important;
