@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "shrikhand-regular.otf";
-  src: url("yazidprojet3/assets/fonts/shrimkhand/shrikhand-regular.otf") format("opentype"); }
+  font-family: 'shrikhand';
+  src: url("/assets/fonts/shrikhand-regular.otf") format("opentype"); }
 
 @font-face {
   font-family: "Roboto-Medium.ttf";
@@ -35,7 +35,7 @@ body {
     display: block; }
     body .ohmyfood h1 {
       font-size: 50px;
-      font-family: Shrikhand, " cursive "; }
+      font-family: 'Shrikhand', cursive; }
     body .ohmyfood ul {
       display: flex !important;
       justify-content: center;
@@ -356,7 +356,8 @@ body {
     body .foot h1 {
       text-align: left;
       padding-left: 2rem;
-      padding-top: 2rem; }
+      padding-top: 2rem;
+      font-family: 'shrikhand',cursive; }
       @media (max-width: 1024px) {
         body .foot h1 {
           text-align: center !important;
@@ -400,12 +401,12 @@ body {
           color: #fff; }
 
 @font-face {
-  font-family: 'shrikhand-regular.otf';
-  src: url("/assets/fonts/shrikhand/shrikhand-regular.otf") format("opentype"); }
+  font-family: 'shrikhand';
+  src: url("/assets/fonts/shrikhand-regular.otf") format("opentype"); }
 
 @font-face {
-  font-family: 'Roboto-Medium.ttf';
-  src: url("/assets/fonts/roboto/Roboto-Medium.ttf") format("truetype"); }
+  font-family: 'Roboto';
+  src: url("/assets/fonts/Roboto-Medium.ttf") format("truetype"); }
 
 body {
   margin: 0;
@@ -500,7 +501,7 @@ body {
         padding-top: 1rem;
         width: 70%; } }
     body .titre h1 {
-      font-family: "shrikhand",cursive;
+      font-family: 'shrikhand',cursive;
       font-weight: 600; }
     body .titre a {
       text-decoration: none; }
@@ -551,7 +552,7 @@ body {
         body .menu-francaise .menu-cd-1 {
           padding-bottom: 0; } }
       body .menu-francaise .menu-cd-1 h2 {
-        font-family: "shrikhand",cursive;
+        font-family: 'shrikhand',cursive;
         font-weight: 200; }
         @media (max-width: 766px) {
           body .menu-francaise .menu-cd-1 h2 {
@@ -611,7 +612,7 @@ body {
             height: 100%;
             margin-bottom: 2rem; } }
         body .menu-francaise .menu-cd-2 .men h3, body .menu-francaise .menu-cd-2 .men .container .container-child .menu1 p, body .container .container-child .menu1 .menu-francaise .menu-cd-2 .men p {
-          font-family: "roboto",sans-serif;
+          font-family: 'Roboto',sans-serif;
           font-weight: 600;
           line-height: 2rem;
           width: 40px;
@@ -742,7 +743,7 @@ body {
             transform: rotate(0);
             color: #fff; }
         body .menu-francaise .menu-cd-2 .men .price-menu {
-          font-family: "roboto",sans-serif;
+          font-family: 'roboto',sans-serif;
           font-weight: bold;
           margin-right: 1rem;
           cursor: pointer; }
@@ -788,7 +789,7 @@ body {
       body .foot {
         height: 300px; } }
     body .foot h1 {
-      font-family: shrikhand,"cursive";
+      font-family: 'shrikhand',cursive;
       text-align: left;
       padding-left: 2rem;
       padding-top: 2rem; }
@@ -819,7 +820,7 @@ body {
           line-height: 3px;
           margin-left: -1rem; } }
       body .foot ul li {
-        font-family: "roboto",sans-serif;
+        font-family: 'Roboto',sans-serif;
         display: flex;
         justify-content: center;
         align-items: center; }
