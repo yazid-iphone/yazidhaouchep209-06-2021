@@ -357,7 +357,7 @@ body {
       text-align: left;
       padding-left: 2rem;
       padding-top: 2rem;
-      font-family: shrikhand,"cursive"; }
+      font-family: 'shrikhand'; }
       @media (max-width: 1024px) {
         body .foot h1 {
           text-align: center !important;
