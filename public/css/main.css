@@ -1,10 +1,8 @@
 @font-face {
   font-family: 'shrikhand';
-  src: url("/assets/fonts/shrikhand-regular.otf") format("opentype"); }
-
-@font-face {
-  font-family: "Roboto-Medium.ttf";
-  src: url("assets/fonts/roboto/Roboto-Medium.ttf") format("truetype"); }
+  src: url("shrikhand.eot?") format("eot"), url("shrikhand.otf") format("truetype"), url("shrikhand.woff") format("woff"), url("shrikhand.svg#QuadrantaBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 body {
   padding: 0;
@@ -34,8 +32,7 @@ body {
   body .ohmyfood {
     display: block; }
     body .ohmyfood h1 {
-      font-size: 50px;
-      font-family: 'Shrikhand'; }
+      font-size: 50px; }
     body .ohmyfood ul {
       display: flex !important;
       justify-content: center;
@@ -108,6 +105,9 @@ body {
       width: 180px;
       margin-top: 1rem;
       margin-bottom: 1rem; }
+  body .main {
+    width: 100%;
+    max-width: 1920px; }
   body .localitation {
     display: flex !important;
     justify-content: center;
@@ -121,9 +121,9 @@ body {
       margin-right: 1rem; }
     body .localitation p {
       font-size: 1.25rem;
-      font-weight: 400;
-      font-family: "roboto",sans-serif; }
+      font-weight: 400; }
   body .wrapper {
+    font-family: 'shrikhand';
     text-align: center;
     background-color: #f6f6f6;
     margin-top: -1.5rem; }
@@ -133,7 +133,6 @@ body {
     body .wrapper h2 {
       font-size: 1.7rem;
       font-weight: 600;
-      font-family: "roboto",sans-serif;
       padding-top: 1rem; }
       @media (max-width: 766px) {
         body .wrapper h2 {
@@ -143,8 +142,7 @@ body {
           padding-top: 2rem; } }
     body .wrapper p {
       font-size: 1.10rem;
-      font-weight: 300;
-      font-family: "roboto",sans-serif; }
+      font-weight: 300; }
       @media (max-width: 766px) {
         body .wrapper p {
           width: 90%;
@@ -183,8 +181,7 @@ body {
           text-align: center;
           width: 100%;
           font-size: 1.5rem;
-          font-weight: 500;
-          font-family: "roboto",sans-serif; } }
+          font-weight: 500; } }
     @media (max-width: 1024px) and (max-width: 766px) {
       body .choix-father h2 {
         text-align: left;
@@ -234,7 +231,6 @@ body {
         body .choix-father .choix-child .choix-1 p {
           font-size: 1rem;
           font-weight: 400;
-          font-family: "roboto",sans-serif;
           white-space: nowrap; }
       body .choix-father .choix-child .number {
         display: flex !important;
@@ -255,8 +251,7 @@ body {
       padding-top: 2rem;
       text-align: center;
       font-size: 1.5rem;
-      font-weight: 600;
-      font-family: "roboto",sans-serif; }
+      font-weight: 600; }
       @media (max-width: 766px) {
         body .container h2 {
           padding-left: 1rem;
@@ -264,8 +259,11 @@ body {
           text-align: left; } }
     body .container .container-child {
       display: grid;
+      column-gap: 2rem;
       grid-template-columns: repeat(2, 1fr);
-      padding-bottom: 2rem; }
+      row-gap: 2rem;
+      padding-bottom: 2rem;
+      margin: 1rem; }
       @media (max-width: 766px) {
         body .container .container-child {
           display: flex;
@@ -306,7 +304,7 @@ body {
         animation: new 0.5s ease-in-out infinite;
         font-family: sans-serif; }
       body .container .container-child .menu {
-        height: 90px;
+        height: 120px;
         display: flex !important;
         justify-content: center;
         align-items: center;
@@ -316,19 +314,20 @@ body {
             height: 70px;
             line-height: 2px; } }
       body .container .container-child .menu1 {
+        padding-bottom: 2rem;
         padding-left: 1rem; }
         @media (max-width: 766px) {
           body .container .container-child .menu1 {
-            padding-top: 0; } }
+            padding-top: 1.5rem; } }
         body .container .container-child .menu1 h3, body .container .container-child .menu1 p {
           font-size: 1.25rem;
           font-weight: 600;
-          font-family: "roboto",sans-serif;
           line-height: 0.5rem; }
         body .container .container-child .menu1 p {
           font-weight: 300; }
       body .container .container-child .menu2 {
-        width: 3rem; }
+        width: 3rem;
+        padding-bottom: 1rem; }
       body .container .container-child .fas {
         background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
         background-clip: text;
@@ -346,13 +345,9 @@ body {
         font-size: 30px;
         color: grey; }
   body .foot {
-    height: 200px;
     margin-top: -2rem;
     background: #353535;
     color: #fafafa; }
-    @media (max-width: 1024px) {
-      body .foot {
-        height: 300px; } }
     body .foot h1 {
       text-align: left;
       padding-left: 2rem;
@@ -401,11 +396,9 @@ body {
 
 @font-face {
   font-family: 'shrikhand';
-  src: url("/assets/fonts/shrikhand-regular.otf") format("opentype"); }
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("/assets/fonts/Roboto-Medium.ttf") format("truetype"); }
+  src: url("shrikhand.eot?") format("eot"), url("shrikhand.otf") format("truetype"), url("shrikhand.woff") format("woff"), url("shrikhand.svg#QuadrantaBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 body {
   margin: 0;
@@ -487,6 +480,7 @@ body {
   100% {
     opacity: 0; } }
   body .titre {
+    font-family: 'shrikhand';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -500,7 +494,6 @@ body {
         padding-top: 1rem;
         width: 70%; } }
     body .titre h1 {
-      font-family: 'shrikhand',cursive;
       font-weight: 600; }
     body .titre a {
       text-decoration: none; }
@@ -551,7 +544,7 @@ body {
         body .menu-francaise .menu-cd-1 {
           padding-bottom: 0; } }
       body .menu-francaise .menu-cd-1 h2 {
-        font-family: 'shrikhand',cursive;
+        font-family: 'shrikhand';
         font-weight: 200; }
         @media (max-width: 766px) {
           body .menu-francaise .menu-cd-1 h2 {
@@ -593,7 +586,6 @@ body {
         body .menu-francaise .menu-cd-2 {
           display: flex;
           flex-direction: column;
-          row-gap: 2rem;
           width: 95%;
           margin: auto;
           height: 100%; } }
@@ -611,7 +603,7 @@ body {
             height: 100%;
             margin-bottom: 2rem; } }
         body .menu-francaise .menu-cd-2 .men h3, body .menu-francaise .menu-cd-2 .men .container .container-child .menu1 p, body .container .container-child .menu1 .menu-francaise .menu-cd-2 .men p {
-          font-family: 'Roboto',sans-serif;
+          font-family: 'yazid';
           font-weight: 600;
           line-height: 2rem;
           width: 40px;
@@ -714,7 +706,6 @@ body {
           white-space: nowrap;
           overflow: hidden; }
           body .menu-francaise .menu-cd-2 .men .prix h4 {
-            font-family: "roboto",sans-serif;
             font-weight: 600;
             padding-top: 2rem;
             line-height: 0; }
@@ -742,7 +733,6 @@ body {
             transform: rotate(0);
             color: #fff; }
         body .menu-francaise .menu-cd-2 .men .price-menu {
-          font-family: 'roboto',sans-serif;
           font-weight: bold;
           margin-right: 1rem;
           cursor: pointer; }
@@ -780,15 +770,11 @@ body {
         box-shadow: 0 3px 15px 0 #010000;
         opacity: 0.8; }
   body .foot {
-    height: 200px;
     margin-top: -2rem;
     background: #353535;
     color: #fafafa; }
-    @media (max-width: 1024px) {
-      body .foot {
-        height: 300px; } }
     body .foot h1 {
-      font-family: shrikhand;
+      font-family: 'shrikhand';
       text-align: left;
       padding-left: 2rem;
       padding-top: 2rem; }
@@ -819,7 +805,6 @@ body {
           line-height: 3px;
           margin-left: -1rem; } }
       body .foot ul li {
-        font-family: 'Roboto',sans-serif;
         display: flex;
         justify-content: center;
         align-items: center; }
