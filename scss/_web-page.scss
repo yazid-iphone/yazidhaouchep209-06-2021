@@ -8,10 +8,10 @@ $green:rgb(1,0,0);
 $alpha:.2;
 @font-face {
     font-family:'shrikhand';
-    src: url('/assets/fonts/shrikhand/shrikhand.eot?') format('eot'),
-         url('/assets/fonts/shrikhand/shrikhand.otf') format('truetype'),
-         url('/assets/fonts/shrikhand/shrikhand.woff') format('woff'),
-         url('/assets/fonts/shrikhand/shrikhand.svg#QuadrantaBold') format('svg');
+    src: url('./assets/fonts/shrikhand/shrikhand.eot?') format('eot'),
+         url('./assets/fonts/shrikhand/shrikhand.otf') format('truetype'),
+         url('./assets/fonts/shrikhand/shrikhand.woff') format('woff'),
+         url('./assets/fonts/shrikhand/shrikhand.svg#QuadrantaBold') format('svg');
     font-weight: normal;
     font-style: normal;
     }
