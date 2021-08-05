@@ -7,14 +7,22 @@ $box:0 3px 15px 0;
 $green:rgb(1,0,0);
 $alpha:.2;
 @font-face {
-    font-family:'shrikhand';
-    src: url('./assets/fonts/shrikhand/shrikhand.eot?') format('eot'),
-         url('./assets/fonts/shrikhand/shrikhand.otf') format('truetype'),
-         url('./assets/fonts/shrikhand/shrikhand.woff') format('woff'),
-         url('./assets/fonts/shrikhand/shrikhand.svg#QuadrantaBold') format('svg');
+    font-family: 'shrikhandregular';
+    src: url('../fonts/shrikhand/shrikhand-regular-webfont.woff2') format('woff2'),
+         url('..fonts/shrikhand/shrikhand-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
+}
+    @font-face {
+        font-family: 'robotothin';
+        src: url('../fonts/roboto/roboto-thin-webfont.woff2') format('woff2'),
+             url('../fonts/roboto/roboto-thin-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
     }
+  
 
 @mixin flex{
     display: flex;
@@ -71,12 +79,10 @@ color: transparent;
        opacity: 1;
     }
 }}
-@mixin roboto{
-    font-family: "roboto",sans-serif;
-    font-weight: 200;
-}
+
  
    body{
+       
        margin: 0;
        padding: 0;
    
@@ -182,7 +188,7 @@ color: transparent;
   
  
 .titre{
-    font-family: 'shrikhand';
+    
     @include flex; 
     width: 60%;
     background: #fff;
@@ -250,8 +256,8 @@ img{
     padding-bottom: 0;
 }
 h2{
-    font-family: 'shrikhand';
-    font-weight: 200;
+    
+    font-weight: 100;
     @media(max-width: 766px){
         font-size: 27px;
         margin-top: 2rem;
@@ -314,8 +320,8 @@ h2{
     margin-bottom: 2rem;
 }
 h3{
-    font-family:'yazid';
-    font-weight: 600;
+    
+    font-weight: 900;
     line-height: 2rem;
     width: 40px;
     height: 3px;
@@ -402,14 +408,17 @@ animation-delay: 1.2s;
     
 h4{
     
-    font-weight: 600;
+
+    font-family: 'robotothin';
     padding-top: 2rem;
     line-height: 0;
     
 }    
- p{ @include prix;
-   @include roboto;
+ p{ 
+     @include prix;
     padding-bottom: 2rem;
+    
+    font-weight: 100;
     
 }}
 .valider{
@@ -455,7 +464,7 @@ h4{
     background: linear-gradient(
         175deg
         , #FF79DA 10%, #9356DC 90%);
-    @include roboto;
+    
     cursor: pointer;
     font-size: 17px;
     color: #fff;
@@ -480,16 +489,16 @@ h4{
 
 
 .foot{
-    
+    height: 200px;
     margin-top: -2rem;
     background: #353535;
     color: #fafafa;
     @media(max-width:1024px){
-    
+    height: 300px;
     }
    
     h1{ 
-        font-family: 'shrikhand';
+        
         text-align: left;
         padding-left: 2rem;
         padding-top: 2rem;
@@ -504,6 +513,7 @@ h4{
         }
         }
     ul{
+
         @include flex;
     justify-content: space-between;
 list-style: none;
