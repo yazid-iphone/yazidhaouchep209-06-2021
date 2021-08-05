@@ -10,6 +10,12 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'robotomedium';
+  src: url("../fonts/roboto/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto/roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   padding: 0;
   margin: 0; }
@@ -38,7 +44,8 @@ body {
   body .ohmyfood {
     display: block; }
     body .ohmyfood h1 {
-      font-size: 50px; }
+      font-size: 100px;
+      font-family: 'shrikhandregular'; }
     body .ohmyfood ul {
       display: flex !important;
       justify-content: center;
@@ -112,8 +119,7 @@ body {
       margin-top: 1rem;
       margin-bottom: 1rem; }
   body .main {
-    width: 100%;
-    max-width: 1920px; }
+    width: 100%; }
   body .localitation {
     display: flex !important;
     justify-content: center;
@@ -126,6 +132,7 @@ body {
       align-items: center;
       margin-right: 1rem; }
     body .localitation p {
+      font-family: 'robotomedium';
       font-size: 1.25rem;
       font-weight: 400; }
   body .wrapper {
@@ -136,6 +143,7 @@ body {
       body .wrapper {
         margin-top: 0; } }
     body .wrapper h2 {
+      font-family: 'robotomedium';
       font-size: 1.7rem;
       font-weight: 600;
       padding-top: 1rem; }
@@ -146,6 +154,7 @@ body {
           width: 80%;
           padding-top: 2rem; } }
     body .wrapper p {
+      font-family: 'robotothin';
       font-size: 1.10rem;
       font-weight: 100; }
       @media (max-width: 766px) {
@@ -155,6 +164,7 @@ body {
           padding-bottom: 2rem;
           padding-top: 1rem; } }
   body .button1 {
+    font-family: 'robotomedium';
     background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
     cursor: pointer;
     font-size: 20px;
@@ -183,6 +193,7 @@ body {
         display: flex;
         flex-direction: column; }
         body .choix-father h2 {
+          font-family: 'robotomedium';
           text-align: center;
           width: 100%;
           font-size: 1.5rem;
@@ -234,7 +245,7 @@ body {
           padding-left: 1.25rem;
           color: gray; }
         body .choix-father .choix-child .choix-1 p {
-          font-family: 'robotothin';
+          font-family: 'robotomedium';
           font-size: 1rem;
           font-weight: 400;
           white-space: nowrap; }
@@ -254,6 +265,7 @@ body {
       body .container {
         margin-bottom: -1.5rem; } }
     body .container h2 {
+      font-family: 'robotomedium';
       padding-top: 2rem;
       text-align: center;
       font-size: 1.5rem;
@@ -297,6 +309,7 @@ body {
           height: 12rem;
           object-fit: cover; }
       body .container .container-child .new {
+        font-family: 'robotomedium';
         display: flex !important;
         justify-content: center;
         align-items: center;
@@ -326,10 +339,12 @@ body {
             padding-top: 1.5rem; } }
         body .container .container-child .menu1 h3, body .container .container-child .menu1 p {
           font-size: 1.25rem;
-          font-weight: 900;
+          font-weight: 600;
+          font-family: 'robotomedium';
           line-height: 0.5rem; }
         body .container .container-child .menu1 p {
-          font-weight: 300; }
+          font-weight: 300;
+          font-family: 'robotothin'; }
       body .container .container-child .menu2 {
         width: 3rem;
         padding-bottom: 1rem; }
@@ -358,6 +373,7 @@ body {
       body .foot {
         height: 300px; } }
     body .foot h1 {
+      font-family: 'shrikhandregular';
       text-align: left;
       padding-left: 2rem;
       padding-top: 2rem; }
@@ -388,6 +404,7 @@ body {
           line-height: 3px;
           margin-left: -1rem; } }
       body .foot ul li {
+        font-family: 'robotothin';
         display: flex !important;
         justify-content: center;
         align-items: center; }
@@ -412,6 +429,12 @@ body {
 @font-face {
   font-family: 'robotothin';
   src: url("../fonts/roboto/roboto-thin-webfont.woff2") format("woff2"), url("../fonts/roboto/roboto-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url("../fonts/roboto/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto/roboto-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -508,6 +531,7 @@ body {
         padding-top: 1rem;
         width: 70%; } }
     body .titre h1 {
+      font-family: 'shrikhandregular';
       font-weight: 600; }
     body .titre a {
       text-decoration: none; }
@@ -558,6 +582,7 @@ body {
         body .menu-francaise .menu-cd-1 {
           padding-bottom: 0; } }
       body .menu-francaise .menu-cd-1 h2 {
+        font-family: 'shrikhandregular';
         font-weight: 100; }
         @media (max-width: 766px) {
           body .menu-francaise .menu-cd-1 h2 {
@@ -616,6 +641,7 @@ body {
             height: 100%;
             margin-bottom: 2rem; } }
         body .menu-francaise .menu-cd-2 .men h3, body .menu-francaise .menu-cd-2 .men .container .container-child .menu1 p, body .container .container-child .menu1 .menu-francaise .menu-cd-2 .men p {
+          font-family: 'robotomedium';
           font-weight: 900;
           line-height: 2rem;
           width: 40px;
@@ -718,10 +744,11 @@ body {
           white-space: nowrap;
           overflow: hidden; }
           body .menu-francaise .menu-cd-2 .men .prix h4 {
-            font-family: 'robotothin';
+            font-family: 'robotomedium';
             padding-top: 2rem;
             line-height: 0; }
           body .menu-francaise .menu-cd-2 .men .prix p {
+            font-family: 'robotothin';
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
@@ -761,6 +788,7 @@ body {
         padding-top: 1.5rem;
         padding-bottom: 3rem; } }
     body .button .btn {
+      font-family: 'robotomedium';
       background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
       cursor: pointer;
       font-size: 17px;
@@ -779,6 +807,7 @@ body {
         box-shadow: 0 3px 15px 0 #010000;
         opacity: 0.8; }
   body .foot {
+    font-family: 'shrikhandregular';
     height: 200px;
     margin-top: -2rem;
     background: #353535;
@@ -817,6 +846,7 @@ body {
           line-height: 3px;
           margin-left: -1rem; } }
       body .foot ul li {
+        font-family: 'robotothin';
         display: flex;
         justify-content: center;
         align-items: center; }

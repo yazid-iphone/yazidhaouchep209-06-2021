@@ -22,7 +22,14 @@ $alpha:.2;
         font-style: normal;
     
     }
-  
+    @font-face {
+        font-family: 'robotomedium';
+        src: url('../fonts/roboto/roboto-medium-webfont.woff2') format('woff2'),
+             url('../fonts/roboto/roboto-medium-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
 
 @mixin flex{
     display: flex;
@@ -200,7 +207,7 @@ color: transparent;
         width: 70%;
     }
  h1{
-    
+    font-family: 'shrikhandregular';
     font-weight: 600;
 }
  a{
@@ -256,7 +263,7 @@ img{
     padding-bottom: 0;
 }
 h2{
-    
+    font-family: 'shrikhandregular';
     font-weight: 100;
     @media(max-width: 766px){
         font-size: 27px;
@@ -320,7 +327,7 @@ h2{
     margin-bottom: 2rem;
 }
 h3{
-    
+    font-family: 'robotomedium';
     font-weight: 900;
     line-height: 2rem;
     width: 40px;
@@ -409,12 +416,13 @@ animation-delay: 1.2s;
 h4{
     
 
-    font-family: 'robotothin';
+    font-family: 'robotomedium';
     padding-top: 2rem;
     line-height: 0;
     
 }    
  p{ 
+    font-family: 'robotothin';
      @include prix;
     padding-bottom: 2rem;
     
@@ -461,6 +469,7 @@ h4{
         padding-top: 1.5rem;
         padding-bottom: 3rem;}
   .btn{  
+    font-family: 'robotomedium';
     background: linear-gradient(
         175deg
         , #FF79DA 10%, #9356DC 90%);
@@ -489,6 +498,7 @@ h4{
 
 
 .foot{
+    font-family: 'shrikhandregular';
     height: 200px;
     margin-top: -2rem;
     background: #353535;
@@ -534,7 +544,7 @@ padding-bottom: 2rem;
 
 
 li{
-    
+    font-family: 'robotothin';
     @include flex;
      @media(max-width:666px){
      @include flex;
